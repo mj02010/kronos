@@ -54,7 +54,7 @@
 				if (request.status >= 200 && request.status < 400) {
 			    	// Success!
 			        var data = JSON.parse(request.responseText);
-			        document.getElementById("discord-counter1").innerHTML = data.members.length;
+			        document.getElementById("discord-counter1").innerHTML = data.presence_count;
 
 			    } else {
 			        // We reached our target server, but it returned an error
